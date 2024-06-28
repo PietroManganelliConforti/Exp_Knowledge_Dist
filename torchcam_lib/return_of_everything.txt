@@ -1,0 +1,42 @@
+11.235668789808917 <--- /work/project/save_imagenette/debug_butta/S:resnet8_T:resnet18_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:11.0_seed:12345_0
+91.97452229299363 <--- /work/project/save_imagenette/teachers/vgg19bn_vanilla_imagenette_trial_0
+82.29299363057325 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:resnet18_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:10.0_seed:12345_0
+92.6624203821656 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:vgg8_T:vgg19bn_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:noXAI_Wxai:150.0_seed:12345_0
+92.76433121019109 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:vgg8_T:vgg19bn_imagenette_similarity_r:1.0_a:1.0_b:3000.0_xai:noXAI_Wxai:150.0_seed:12345_run_all_script2.sh
+82.64968152866243 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:resnet18_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:50.0_seed:12345_0
+92.0 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:vgg8_T:resnet56_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:10.0_seed:12345_0
+92.40764331210191 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:vgg8_T:vgg19bn_imagenette_simkd_r:0.0_a:0.0_b:1.0_xai:noXAI_Wxai:150.0_seed:12345_0
+82.42038216560509 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:resnet18_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:100.0_seed:12345_0
+81.12101910828025 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:resnet18_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:150.0_seed:12345_0 # ARRIVATI QUI PT1
+90.90445859872611 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8x4_T:resnet32x4_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:10.0_seed:12345_0
+92.30573248407643 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:vgg8_T:resnet56_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:50.0_seed:12345_0
+82.95541401273886 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:resnet8_T:vgg8_imagenette_hint_r:1.0_a:1.0_b:100.0_xai:noXAI_Wxai:150.0_seed:12345_0
+83.61783439490446 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:resnet8_T:vgg8_imagenette_attention_r:1.0_a:1.0_b:1000.0_xai:noXAI_Wxai:150.0_seed:12345_0
+83.51592356687898 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:vgg8_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:10.0_seed:12345_0
+83.38853503184713 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:resnet8_T:vgg8_imagenette_vid_r:1.0_a:1.0_b:1.0_xai:noXAI_Wxai:150.0_seed:12345_0
+92.63694267515923 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:vgg8_T:resnet56_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:100.0_seed:12345_0 # ARRIVATI QUI PT2
+90.52229299363057 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8x4_T:resnet32x4_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:50.0_seed:12345_0
+83.28662420382166 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:vgg8_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:50.0_seed:12345_0
+92.38216560509554 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:vgg8_T:resnet56_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:150.0_seed:12345_0
+82.26751592356688 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:resnet8_T:vgg8_imagenette_semckd_r:1.0_a:1.0_b:400.0_xai:noXAI_Wxai:150.0_seed:12345_0
+83.21019108280255 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:vgg8_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:100.0_seed:12345_0
+82.7515923566879 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:resnet8_T:vgg8_imagenette_srrl_r:1.0_a:1.0_b:1.0_xai:noXAI_Wxai:150.0_seed:12345_0
+83.69426751592357 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:vgg8_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:150.0_seed:12345_0
+88.78980891719745 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:resnet8_T:vgg8_imagenette_simkd_r:0.0_a:0.0_b:1.0_xai:noXAI_Wxai:0.0_seed:12345_0
+84.30573248407643 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:resnet8_T:vgg8_imagenette_similarity_r:1.0_a:1.0_b:3000.0_xai:noXAI_Wxai:0.0_seed:12345_run_script3.sh
+90.70063694267516 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8x4_T:resnet32x4_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:100.0_seed:12345_0
+88.78980891719745 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:resnet8_T:vgg8_imagenette_simkd_r:0.0_a:0.0_b:1.0_xai:noXAI_Wxai:0.0_seed:12345_0
+86.90445859872611 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:resnet18_imagenette_simkd_r:0.0_a:0.0_b:1.0_xai:GradCAM_Wxai:50.0_seed:12345_0 # ARRIVATO QUI PT3
+91.00636942675159 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8x4_T:resnet32x4_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAM_Wxai:150.0_seed:12345_0  # ARRIVATO QUI PT 4 /--/ 
+82.95541401273886 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:resnet8_T:vgg8_imagenette_hint_r:1.0_a:1.0_b:100.0_xai:noXAI_Wxai:0.0_seed:12345_0
+92.56050955414013 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:vgg8_T:vgg19bn_imagenette_hint_r:1.0_a:1.0_b:100.0_xai:noXAI_Wxai:0.0_seed:12345_0
+91.54140127388536 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:vgg8_T:resnet56_imagenette_hint_r:1.0_a:1.0_b:100.0_xai:noXAI_Wxai:0.0_seed:12345_0
+91.54140127388536 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:vgg8_T:resnet56_imagenette_hint_r:1.0_a:1.0_b:100.0_xai:noXAI_Wxai:0.0_seed:12345_0
+92.9171974522293 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:vgg8_T:vgg19bn_imagenette_attention_r:1.0_a:1.0_b:1000.0_xai:noXAI_Wxai:0.0_seed:12345_0
+83.38853503184713 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:vgg8_imagenette_hint_r:1.0_a:1.0_b:100.0_xai:GradCAM_Wxai:10.0_seed:12345_0
+92.76433121019109 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:vgg8_T:vgg19bn_imagenette_similarity_r:1.0_a:1.0_b:3000.0_xai:noXAI_Wxai:0.0_seed:12345_0
+92.61146496815287 <--- /work/project/save_imagenette/student_noXAI_noGradinLib/S:vgg8_T:vgg19bn_imagenette_vid_r:1.0_a:1.0_b:1.0_xai:noXAI_Wxai:0.0_seed:12345_0
+83.89808917197452 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:vgg8_imagenette_hint_r:1.0_a:1.0_b:100.0_xai:GradCAM_Wxai:50.0_seed:12345_0
+91.61783439490446 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:vgg8_T:resnet56_imagenette_hint_r:1.0_a:1.0_b:100.0_xai:GradCAM_Wxai:10.0_seed:12345_0
+84.35668789808918 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:vgg8_imagenette_hint_r:1.0_a:1.0_b:100.0_xai:GradCAM_Wxai:100.0_seed:12345_0 #SEGUONO RES SULLA .2.54
+82.62420382165605 <--- /work/project/save_imagenette/student_XAI_noGradinLib/S:resnet8_T:vgg8_imagenette_kd_r:1.0_a:1.0_b:0.0_xai:GradCAMpp_Wxai:10.0_seed:12345_0
