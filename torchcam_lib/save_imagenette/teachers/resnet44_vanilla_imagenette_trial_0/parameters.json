@@ -1,0 +1,26 @@
+{
+    "batch_size": 16,
+    "dataset": "imagenette",
+    "epochs": 125,
+    "gpu": 2,
+    "gpu_id": 2,
+    "learning_rate": 0.05,
+    "lr_decay_epochs": [
+        75,
+        100,
+        115
+    ],
+    "lr_decay_rate": 0.1,
+    "model": "resnet44",
+    "model_name": "resnet44_vanilla_imagenette_trial_0",
+    "model_path": "/work/project/save_imagenette/teachers",
+    "momentum": 0.9,
+    "ngpus_per_node": 1,
+    "num_workers": 8,
+    "print_freq": 50,
+    "save_folder": "/work/project/save_imagenette/teachers/resnet44_vanilla_imagenette_trial_0",
+    "trial": "0",
+    "weight_decay": 0.0005,
+    "Total params": 0.661338,
+    "Total time": 8.94
+}
