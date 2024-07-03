@@ -60,12 +60,6 @@ run_all_distillations()
 
     # KD
     # docker run -v $PWD/torchcam_lib/:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill kd --model_s $2 -c 1 -d 1 -b 0 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette --xai $3  --w_xai $5  
-    # FitNet
-    docker run -v $PWD/torchcam_lib/:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill hint --model_s $2 -c 1 -d 1 -b 100 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5 
-    # AT
-    docker run -v $PWD/torchcam_lib/:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill attention --model_s $2 -c 1 -d 1 -b 1000 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5 
-    # SP
-    docker run -v $PWD/torchcam_lib/:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill similarity --model_s $2 -c 1 -d 1 -b 3000 --trial $0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5 
     # VID
     docker run -v $PWD/torchcam_lib/:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill vid --model_s $2 -c 1 -d 1 -b 1 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5 
     ## CRD
@@ -73,9 +67,16 @@ run_all_distillations()
     # SemCKD
     docker run -v $PWD/torchcam_lib/:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill semckd --model_s $2 -c 1 -d 1 -b 400 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5 
     # SRRL
-    docker run -v $PWD/torchcam_lib/:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill srrl --model_s $2 -c 1 -d 1 -b 1 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5
+    # docker run -v $PWD/torchcam_lib/:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill srrl --model_s $2 -c 1 -d 1 -b 1 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5
     # SimKD
     docker run -v $PWD/torchcam_lib/:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill simkd --model_s $2 -c 0 -d 0 -b 1 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5 
+    # FitNet
+    docker run -v $PWD/torchcam_lib/:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill hint --model_s $2 -c 1 -d 1 -b 100 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5 
+    # AT
+    docker run -v $PWD/torchcam_lib/:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill attention --model_s $2 -c 1 -d 1 -b 1000 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5 
+    # SP
+    docker run -v $PWD/torchcam_lib/:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill similarity --model_s $2 -c 1 -d 1 -b 3000 --trial $0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai $5 
+    
 }
 
 run_all_distillations_mini(){
