@@ -7,22 +7,28 @@
 #kill dockers
 
 
-
-run_a_table_column()  
+script_tower_1()  
 {
-    # OSS 25/7 23:22 C'ERA W_XAI A 150 SOLO SU ALCUNI E ALTRI CON $5. $0 a trial? perchè?
+    docker run -v $PWD/torchcam_lib:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/train_student_xai.py --model_t vgg8 --distill kd --model_s resnet8 -c 1 -d 1 -b 0 --trial 0 --gpu_id 0 --batch_size 8 --dataset imagenette --xai noXAI --w_xai 0  
+    docker run -v $PWD/torchcam_lib:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/train_student_xai.py --model_t resnet18 --distill hint --model_s resnet8 -c 1 -d 1 -b 100 --trial 0 --gpu_id 1 --batch_size 8 --dataset imagenette  --xai GradCAM --w_xai 100
+}
 
-    local gpu_id=$4
-    local script_name="train_student_xai.py"
+script_tower_2()  
+{   
+    docker run -v $PWD/torchcam_lib:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/train_student_xai.py --model_t resnet18 --distill hint --model_s resnet8 -c 1 -d 1 -b 100 --trial 0 --gpu_id 1 --batch_size 8 --dataset imagenette  --xai noXAI --w_xai 0    
+    docker run -v $PWD/torchcam_lib:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/train_student_xai.py --model_t resnet18 --distill hint --model_s resnet8 -c 1 -d 1 -b 100 --trial 0 --gpu_id 1 --batch_size 8 --dataset imagenette  --xai GradCAM --w_xai 10
+}
 
-    local testa_e_butta=$0
+script_tower_3()  
+{    
+    docker run -v $PWD/torchcam_lib:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/train_student_xai.py --model_t resnet18 --distill hint --model_s resnet8 -c 1 -d 1 -b 100 --trial 0 --gpu_id 1 --batch_size 8 --dataset imagenette  --xai GradCAM --w_xai 150
+    docker run -v $PWD/torchcam_lib:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/train_student_xai.py --model_t resnet18 --distill hint --model_s resnet8 -c 1 -d 1 -b 100 --trial 0 --gpu_id 1 --batch_size 8 --dataset imagenette  --xai GradCAM --w_xai 50
+}
 
-    # VID
-    docker run -v $PWD/torchcam_lib:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill vid --model_s $2 -c 1 -d 1 -b 1 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai noXAI --w_xai 0
-    docker run -v $PWD/torchcam_lib:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill vid --model_s $2 -c 1 -d 1 -b 1 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai 10
-    docker run -v $PWD/torchcam_lib:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill vid --model_s $2 -c 1 -d 1 -b 1 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai 50
-    docker run -v $PWD/torchcam_lib:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill vid --model_s $2 -c 1 -d 1 -b 1 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai 100
-    docker run -v $PWD/torchcam_lib:/work/project/   --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/$script_name --model_t $1 --distill vid --model_s $2 -c 1 -d 1 -b 1 --trial 0 --gpu_id $gpu_id --batch_size 8 --dataset imagenette  --xai $3 --w_xai 150
+script_tower_4()  
+{
+    docker run -v $PWD/torchcam_lib:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/train_student_xai.py --model_t vgg19bn --distill hint --model_s vgg8 -c 1 -d 1 -b 100 --trial 0 --gpu_id 2 --batch_size 8 --dataset imagenette  --xai GradCAM --w_xai 150
+    docker run -v $PWD/torchcam_lib:/work/project/  --gpus all --ipc host -u 1001:1001 piemmec/xai4kd_2:2 /usr/bin/python3 /work/project/train_student_xai.py --model_t resnet56 --distill hint --model_s vgg8 -c 1 -d 1 -b 100 --trial 0 --gpu_id 3 --batch_size 8 --dataset imagenette  --xai GradCAM --w_xai 100
 }
 
 
@@ -32,11 +38,10 @@ run_a_table_column()
 
 run_all()
 {
-    run_a_table_column resnet18 resnet8 GradCAM 0 &
-    run_a_table_column resnet32x4 resnet8x4 GradCAM 1 &
-    run_a_table_column vgg19bn vgg8 GradCAM 2 &
-    run_a_table_column resnet56 vgg8 GradCAM 3 &
-    run_a_table_column vgg8 resnet8 GradCAM 0 
+    script_tower_1 &
+    script_tower_2 &
+    script_tower_3 & 
+    script_tower_4 
 }
 
 
@@ -45,8 +50,6 @@ run_all
 
 
 # nohup sh   > /dev/null 2>&1 &
-
-
 
 
 # # KD
